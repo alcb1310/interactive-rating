@@ -1,0 +1,133 @@
+/*
+* Declaring global variables for colors
+ */
+
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+  background: var(--Very-Dark-Blue);
+  color: var(--Light-Grey);
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box {
+  background: var(--Dark-Blue);
+  width: 90%;
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 3rem;
+  border-radius: 1rem;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.icon {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 0.6rem;
+  border: 1px solid var(--Very-Dark-Blue);
+  background-image: url("../images/icon-star.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h2 {
+  font-weight: 700;
+  color: var(--White);
+}
+
+.vote {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  background-color: var(--Orange);
+  font-size: 12px;
+  padding: 0.5em;
+  border: 0;
+  border-radius: 100px;
+  color: var(--White);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+}
+
+.vote button {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  background: var(--Medium-grey);
+  color: var(--Dark-Blue);
+}
+
+.vote .selected {
+  background: var(--Orange);
+  color: var(--White);
+}
+
+.vote button:hover {
+  cursor: pointer;
+  background: var(--Orange);
+  color: var(--White);
+}
+
+.results-icon {
+  width: 40%;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.centered p {
+  text-align: center;
+}
+
+.centered h2 {
+  margin: 6px 0;
+}
+
+.selected-box {
+  border: 1px solid var(--Medium-grey);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  width: 60%;
+  background-color: var(--Medium-grey);
+  color: var(--Orange);
+  margin: 2rem auto;
+  text-align: center;
+  padding: 5px 0;
+  font-weight: 700;
+}
+
+#results {
+  display: none;
+}
